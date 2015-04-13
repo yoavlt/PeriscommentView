@@ -4,7 +4,8 @@
 
 This module can show name and comment, design inspired by [Periscope](http://periscope.tv).
 The demo is the following.
-![Demo](https://dl.dropboxusercontent.com/u/32240968/periscommentViewDemo.gif)
+
+![Demo](https://dl.dropboxusercontent.com/u/32240968/periscommentViewDemoLow.gif)
 
 As you can see, profile color is picked at random and long comments is supported.
 
