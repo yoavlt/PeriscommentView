@@ -2,9 +2,9 @@
 <img src="https://dl.dropboxusercontent.com/u/32240968/periscommentView.png" alt="PeriscommentView" width="500" height="80">
 </p>
 
-This can show name and comment inspired by [Periscope](http://periscope.tv).
+This module can show name and comment, design inspired by [Periscope](http://periscope.tv).
 The demo is the following.
-<img src="gifimage" alt="https://dl.dropboxusercontent.com/u/32240968/periscommentViewDemo.gif" width="628" height="520">
+<img alt="https://dl.dropboxusercontent.com/u/32240968/periscommentViewDemo.gif" alt="gifimage" width="628" height="520">
 
 As you can see, profile color is picked at random and long comments is supported.
 
