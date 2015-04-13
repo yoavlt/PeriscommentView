@@ -4,7 +4,7 @@ Pod::Spec.new do |s|
   s.summary      = "Showing comments like Periscope"
 
   s.homepage     = "http://github.com/yoavlt/PeriscommentView"
-  s.license      = { :type => "MIT", :file => "FILE_LICENSE" }
+  s.license      = { :type => "MIT", :file => "LICENSE" }
   s.author             = { "Takuma Yoshida" => "yoa.jmpr.w@gmail.com" }
   s.social_media_url   = "http://twitter.com/yoavlt"
 

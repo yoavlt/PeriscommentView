@@ -8,7 +8,7 @@
 
 import UIKit
 
-@IBDesignable class PeriscommentCell: UIView {
+@IBDesignable public class PeriscommentCell: UIView {
     
     var mark: PeriscommentMark?
     let nameLabel: UILabel
@@ -38,7 +38,7 @@ import UIKit
         self.init(frame: frame, profileImage: profileImage, name: name, comment: comment, config:config)
     }
     
-    required init(coder aDecoder: NSCoder) {
+    required public init(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
     

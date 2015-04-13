@@ -8,17 +8,17 @@
 
 import UIKit
 
-class PeriscommentView: UIView {
+public class PeriscommentView: UIView {
     
     private var visibleCells: [PeriscommentCell] = []
     private var config: PeriscommentConfig
     
-    override init(frame: CGRect) {
-        self.config = PeriscommentConfig()
-        super.init(frame: frame)
+    convenience override init(frame: CGRect) {
+        let config = PeriscommentConfig()
+        self.init(frame: frame, config: config)
     }
 
-    required init(coder aDecoder: NSCoder) {
+    required public init(coder aDecoder: NSCoder) {
         self.config = PeriscommentConfig()
         super.init(coder: aDecoder)
     }
@@ -28,7 +28,7 @@ class PeriscommentView: UIView {
         super.init(frame: frame)
     }
     
-    override func willMoveToSuperview(newSuperview: UIView?) {
+    override public func willMoveToSuperview(newSuperview: UIView?) {
         super.willMoveToSuperview(newSuperview)
         setupView()
     }
@@ -37,7 +37,7 @@ class PeriscommentView: UIView {
         self.backgroundColor = config.layout.backgroundColor
     }
     
-    func addCell(cell: PeriscommentCell) {
+    public func addCell(cell: PeriscommentCell) {
         cell.frame = CGRect(origin: CGPoint(x: 0, y: self.frame.height), size: cell.frame.size)
         visibleCells.append(cell)
         self.addSubview(cell)
@@ -55,11 +55,11 @@ class PeriscommentView: UIView {
             cell.alpha = 0.0
         }) { (Bool) -> Void in
             cell.removeFromSuperview()
-            self.visibleCells.remove(cell)
+            self.visibleCells.removeLast()
         }
     }
     
-    func addCell(profileImage: UIImage, name: String, comment: String) {
+    public func addCell(profileImage: UIImage, name: String, comment: String) {
         let rect = CGRect.zeroRect
         let cell = PeriscommentCell(frame: rect, profileImage: profileImage, name: name, comment: comment, config: self.config)
 
