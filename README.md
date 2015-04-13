@@ -1,4 +1,4 @@
-![PeriscommentView](https://dl.dropboxusercontent.com/u/32240968/periscommentView.png =500x)
+![PeriscommentView](https://dl.dropboxusercontent.com/u/32240968/periscommentView.png)
 
 This module can show name and comment, design inspired by [Periscope](http://periscope.tv).
 The demo is the following.
