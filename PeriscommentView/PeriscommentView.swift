@@ -55,7 +55,7 @@ public class PeriscommentView: UIView {
             cell.alpha = 0.0
         }) { (Bool) -> Void in
             cell.removeFromSuperview()
-            self.visibleCells.removeLast()
+            self.visibleCells.removeAtIndex(self.visibleCells.indexOf(cell)!)
         }
     }
     
