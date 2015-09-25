@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "PeriscommentView"
-  s.version      = "0.0.1"
+  s.version      = "0.0.2"
   s.summary      = "Showing name and comments like Periscope"
 
   s.homepage     = "https://github.com/yoavlt/PeriscommentView"
@@ -11,7 +11,7 @@ Pod::Spec.new do |s|
   s.platform     = :ios
   s.ios.deployment_target = "8.0"
 
-  s.source       = { :git => "https://github.com/yoavlt/PeriscommentView.git", :tag => "0.0.1" }
+  s.source       = { :git => "https://github.com/yoavlt/PeriscommentView.git", :tag => "0.0.2" }
   s.source_files  = "PeriscommentView", "PeriscommentView/**/*.swift"
   s.exclude_files = "PeriscommentView/Exclude"
 
