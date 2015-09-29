@@ -16,6 +16,5 @@ xcuserdata
 profile
 *.moved-aside
 **/Pods
-**/Podfile
 **/Podfile.lock
 *.xcuserstate
