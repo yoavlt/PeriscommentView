@@ -27,17 +27,17 @@ class ViewController: UIViewController {
     func addCells() {
         let profileImage = UIImage(named: "twitterProfile")!
         let name = "@yoavlt"
-        dispatchOnMainThread(delay: 1) {
+        dispatchOnMainThread(1) {
             let comment = "Awesome!"
             self.periscommentView.addCell(profileImage, name: name, comment: comment)
         }
         
-        dispatchOnMainThread(delay: 5) { () -> () in
+        dispatchOnMainThread(5) { () -> () in
             let comment = "Hooooo!"
             self.periscommentView.addCell(profileImage, name: name, comment: comment)
         }
         
-        dispatchOnMainThread(delay: 7) { () -> () in
+        dispatchOnMainThread(7) { () -> () in
             let comment = "Supported looooooong line comments."
             self.periscommentView.addCell(profileImage, name: name, comment: comment)
         }

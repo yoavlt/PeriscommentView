@@ -20,7 +20,7 @@ public class PeriscommentView: UIView {
 
     required public init(coder aDecoder: NSCoder) {
         self.config = PeriscommentConfig()
-        super.init(coder: aDecoder)
+        super.init(coder: aDecoder)!
     }
     
     init(frame: CGRect, config: PeriscommentConfig) {
