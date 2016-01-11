@@ -60,7 +60,7 @@ public class PeriscommentView: UIView {
     }
     
     public func addCell(profileImage: UIImage, name: String, comment: String) {
-        let rect = CGRect.zeroRect
+        let rect = CGRect.zero
         let cell = PeriscommentCell(frame: rect, profileImage: profileImage, name: name, comment: comment, config: self.config)
 
         self.addCell(cell)

@@ -55,10 +55,10 @@ import UIKit
         let width = min(inferedWidth, config.layout.maximumWidth)
         let height = config.layout.padding * 2 + config.layout.commentSpace + self.nameLabel.frame.height + self.commentLabel.frame.height
         
-        self.frame = CGRect(origin: CGPoint.zeroPoint, size: CGSize(width: width, height: height))
+        self.frame = CGRect(origin: CGPoint.zero, size: CGSize(width: width, height: height))
         
         let markSize = CGSize(width: config.layout.markWidth, height: height)
-        let markRect = CGRect(origin: CGPoint.zeroPoint, size: markSize)
+        let markRect = CGRect(origin: CGPoint.zero, size: markSize)
         
         self.mark = PeriscommentMark(frame: markRect, image: image)
         self.addSubview(self.mark!)
