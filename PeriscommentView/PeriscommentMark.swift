@@ -15,13 +15,13 @@ import UIKit
     
     init(frame: CGRect, image: UIImage) {
         super.init(frame: frame)
-        setupView(image)
+        setupView(image: image)
     }
     
     private func setupView(image: UIImage) {
         imageView = UIImageView(image: image)
         imageView!.frame = self.frame
-        imageView!.contentMode = UIViewContentMode.ScaleAspectFit
+        imageView!.contentMode = UIViewContentMode.scaleAspectFit
         self.addSubview(imageView!)
         
         let colorView = UIView(frame: self.frame)

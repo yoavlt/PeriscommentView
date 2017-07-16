@@ -16,7 +16,7 @@ import UIKit
     
     init(frame: CGRect, profileImage: UIImage, name: String, comment: String, config: PeriscommentConfig) {
         let namePos = CGPoint(x: config.layout.markWidth + config.layout.offset, y: config.layout.padding)
-        self.nameLabel = UILabel(frame: CGRect(origin: namePos, size: CGSize.zeroSize))
+        self.nameLabel = UILabel(frame: CGRect(origin: namePos, size: CGSize.zero))
         self.nameLabel.font = config.nameFont.font
         self.nameLabel.textColor = config.nameFont.color
         self.nameLabel.text = name
@@ -24,13 +24,13 @@ import UIKit
         
         let commentPos = CGPoint(x: config.layout.markWidth + config.layout.offset, y: self.nameLabel.frame.height + config.layout.padding + config.layout.commentSpace)
         let maxCommentWidth = config.layout.maxCommentWidth()
-        self.commentLabel = CommentLabel(frame: CGRect(origin: commentPos, size: CGSize.zeroSize), font: config.commentFont, allowLineBreak: config.layout.allowLineBreak, maxWidth: maxCommentWidth)
+        self.commentLabel = CommentLabel(frame: CGRect(origin: commentPos, size: CGSize.zero), font: config.commentFont, allowLineBreak: config.layout.allowLineBreak, maxWidth: maxCommentWidth)
         self.commentLabel.text = comment
         self.commentLabel.sizeToFit()
 
         super.init(frame: frame)
         
-        setupView(profileImage, name: name, comment: comment, config: config)
+        setupView(image: profileImage, name: name, comment: comment, config: config)
     }
     
     internal convenience init(frame: CGRect, profileImage: UIImage, name: String, comment: String) {
@@ -43,7 +43,7 @@ import UIKit
     }
     
     private func setupView(image: UIImage, name: String, comment: String, config: PeriscommentConfig) {
-        self.backgroundColor = UIColor.whiteColor()
+        self.backgroundColor = UIColor.white
         self.layer.cornerRadius = 5
         self.clipsToBounds = true
 
@@ -55,10 +55,10 @@ import UIKit
         let width = min(inferedWidth, config.layout.maximumWidth)
         let height = config.layout.padding * 2 + config.layout.commentSpace + self.nameLabel.frame.height + self.commentLabel.frame.height
         
-        self.frame = CGRect(origin: CGPoint.zeroPoint, size: CGSize(width: width, height: height))
+        self.frame = CGRect(origin: CGPoint.zero, size: CGSize(width: width, height: height))
         
         let markSize = CGSize(width: config.layout.markWidth, height: height)
-        let markRect = CGRect(origin: CGPoint.zeroPoint, size: markSize)
+        let markRect = CGRect(origin: CGPoint.zero, size: markSize)
         
         self.mark = PeriscommentMark(frame: markRect, image: image)
         self.addSubview(self.mark!)
