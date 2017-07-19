@@ -10,7 +10,7 @@ As you can see, profile color is picked at random and long comments is supported
 ## Installation
 [CocoaPods](http://cocoapods.org) is a library manager for iOS projects. To install using CocoaPods:
 ```
-pod 'PeriscommentView', '0.0.1'
+pod 'PeriscommentView', '0.0.3'
 ```
 
 ## Usage

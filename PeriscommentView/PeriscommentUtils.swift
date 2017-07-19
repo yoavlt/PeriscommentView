@@ -28,8 +28,8 @@ class ColorGenerator {
 
 struct PeriscommentConfig {
     let layout: PeriscommentLayout
-    let commentFont = PeriscommentFont(font: UIFont.systemFontOfSize(14.0), color: UIColor.blackColor())
-    let nameFont = PeriscommentFont(font: UIFont.systemFontOfSize(12.0), color: UIColor.lightGrayColor())
+    let commentFont = PeriscommentFont(font: UIFont.systemFont(ofSize: 14.0), color: UIColor.black)
+    let nameFont = PeriscommentFont(font: UIFont.systemFont(ofSize: 12.0), color: UIColor.lightGray)
     let disappearDuration = 6.0
     let appearDuration = 1.0
     init() {
@@ -45,7 +45,7 @@ struct PeriscommentLayout {
     let maximumWidth: CGFloat = 200.0
     let markWidth: CGFloat = 40.0
     let allowLineBreak = true
-    let backgroundColor = UIColor.clearColor()
+    let backgroundColor = UIColor.clear
     init() {
         
     }
@@ -76,7 +76,7 @@ class CommentLabel : UILabel {
     
     override func sizeToFit() {
         if allowLineBreak {
-            self.lineBreakMode = NSLineBreakMode.ByWordWrapping
+            self.lineBreakMode = NSLineBreakMode.byWordWrapping
             self.numberOfLines = 0
         }
         super.sizeToFit()
